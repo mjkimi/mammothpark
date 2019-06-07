@@ -1,7 +1,8 @@
 import React from 'react';
+import Landing from './layout/Landing';
 
 const Rooms = () => {
-  return <div>hello from rooms page</div>;
+  return <Landing landing="roomsShowcase" />;
 };
 
 export default Rooms;

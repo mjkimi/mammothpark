@@ -1,7 +1,7 @@
 import React from 'react';
-
+import Landing from './layout/Landing';
 const Error = () => {
-  return <div>error page</div>;
+  return <Landing />;
 };
 
 export default Error;

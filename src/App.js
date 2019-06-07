@@ -5,13 +5,17 @@ import Rooms from './components/Rooms';
 import SingleRoom from './components/SingleRoom';
 import Error from './components/Error';
 
+import { Route, Switch } from 'react-router-dom';
+
 const App = () => {
   return (
     <>
-      <Home />
-      <Rooms />
-      <SingleRoom />
-      <Error />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/rooms" component={Rooms} />
+        <Route exact path="/rooms/:more" component={SingleRoom} />
+        <Route component={Error} />
+      </Switch>
     </>
   );
 };

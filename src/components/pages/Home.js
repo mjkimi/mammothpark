@@ -1,6 +1,6 @@
 import React from 'react';
-import Landing from './layout/Landing';
-import Banner from './layout/Banner';
+import Landing from '../layout/Landing';
+import Banner from '../layout/Banner';
 import { Link } from 'react-router-dom';
 
 const Home = () => {

@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Home from './components/Home';
-import Rooms from './components/Rooms';
-import SingleRoom from './components/SingleRoom';
-import Error from './components/Error';
+import Home from './components/pages/Home';
+import Rooms from './components/pages/Rooms';
+import SingleRoom from './components/pages/SingleRoom';
+import Error from './components/pages/Error';
 import Navbar from './components/layout/Navbar';
 
 import { Route, Switch } from 'react-router-dom';

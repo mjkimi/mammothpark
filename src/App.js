@@ -4,12 +4,14 @@ import Home from './components/Home';
 import Rooms from './components/Rooms';
 import SingleRoom from './components/SingleRoom';
 import Error from './components/Error';
+import Navbar from './components/layout/Navbar';
 
 import { Route, Switch } from 'react-router-dom';
 
 const App = () => {
   return (
     <>
+      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/rooms" component={Rooms} />

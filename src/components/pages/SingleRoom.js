@@ -4,6 +4,7 @@ import Landing from '../layout/Landing';
 import Banner from '../layout/Banner';
 import { Link } from 'react-router-dom';
 import { RoomContext } from '../../Context';
+import StyledLanding from '../StyledLanding';
 
 export default class SingleRoom extends Component {
   constructor(props) {
@@ -42,13 +43,13 @@ export default class SingleRoom extends Component {
     } = room;
 
     return (
-      <Landing landing="roomsShowcase">
+      <StyledLanding img={images[0]}>
         <Banner title={`${name} room`}>
           <Link to="/rooms" className="btn-primary">
             back to rooms
           </Link>
         </Banner>
-      </Landing>
+      </StyledLanding>
     );
   }
 }

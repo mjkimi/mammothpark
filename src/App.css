@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -13,15 +15,21 @@
   --mainTransition: all 0.3s linear;
   --mainSpacing: 3px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px t0px rgba(0, 0, 0, 0.5);
+  /*  */
+  --trueGreen: #6e9c20;
+  --tastyOrange: #f08100;
+  --trustyBlue: #154295;
 }
 /* globals */
 body {
   padding-top: 66px;
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   line-height: 1.4;
+  /*  */
+  font-family: 'Arimo', sans-serif;
 }
 h1 {
   font-size: 3em;
@@ -111,6 +119,42 @@ h6 {
   font-size: 1.5rem;
   color: var(--primaryColor);
 }
+/*  */
+.bird-logo {
+  color: var(--trueGreen);
+  font-size: 3rem;
+  border-bottom: 7px solid;
+  border-image: linear-gradient(
+      to left,
+      #c4e17f 0%,
+      #c4e17f 12%,
+      #f7fdca 12%,
+      #f7fdca 25%,
+      #fad071 25%,
+      #fad071 37%,
+      #f0766b 37%,
+      #f0766b 50%,
+      #db9dbe 50%,
+      #db9dbe 62%,
+      #c49cdf 62%,
+      #c49cdf 75%,
+      #6599e2 75%,
+      #6599e2 87%,
+      #298aad 87%,
+      #61c2e4 100%
+    )
+    7;
+}
+.book > a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline-block;
+  padding: 11px 30px 11px;
+  color: var(--mainWhite);
+  background: var(--tastyOrange);
+}
+
 .nav-links {
   height: 0;
   overflow: hidden;

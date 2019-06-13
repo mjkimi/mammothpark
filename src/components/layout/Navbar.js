@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../images/logo.svg';
-import { FaAlignRight, FaKiwiBird } from 'react-icons/fa';
+import { FaBars, FaKiwiBird, FaPhone, FaEnvelopeOpen } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 export default class Navbar extends Component {
@@ -17,32 +16,49 @@ export default class Navbar extends Component {
       <nav className="navbar">
         <div className="nav-center">
           <div className="nav-header">
-            <Link to="/">
-              <FaKiwiBird className="bird-logo" />
-              {/* <img src={logo} alt="Beach Resort" /> */}
-            </Link>
-            <button
-              type="button"
-              className="nav-btn"
-              onClick={this.handleToggle}
-            >
-              <FaAlignRight className="nav-icon" />
-            </button>
-          </div>
-          <div className="nav-container">
-            <ul
-              className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}
-            >
-              <li>
-                <Link to="/">Hotel home</Link>
-              </li>
-              <li>
-                <Link to="/rooms">Hotel rooms</Link>
-              </li>
-            </ul>
+            <div className="nav-container">
+              <Link to="/">
+                <FaKiwiBird className="bird-logo" />
+              </Link>
+              <ul
+                className={
+                  this.state.isOpen ? 'nav-links show-nav' : 'nav-links'
+                }
+              >
+                <li>
+                  <Link to="/">Hotel home</Link>
+                </li>
+                <li>
+                  <Link to="/rooms">Hotel rooms</Link>
+                </li>
+              </ul>
+            </div>
             <div className="book">
               <Link to="/rooms">Book</Link>
             </div>
+          </div>
+          <h1 className="hotel-name">Mammoth Park Kazan</h1>
+          <div className="nav-header hotel-title">
+            <ul className="contact">
+              <li>Tatarstan St. 7</li>
+              <li>420024</li>
+              <li>Kazan</li>
+              <li>Russia</li>
+              <li>
+                <a href="tel:6715555555">
+                  <FaPhone />
+                  (617)-555-5555
+                </a>
+              </li>
+            </ul>
+            <span>
+              {' '}
+              <FaEnvelopeOpen />
+              <a href="mailto:contact@mammothpark.com">
+                {' '}
+                contact@mammothpark.com
+              </a>
+            </span>
           </div>
         </div>
       </nav>

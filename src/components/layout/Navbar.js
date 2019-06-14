@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { FaBars, FaKiwiBird, FaPhone, FaEnvelopeOpen } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+// import classnames from 'classnames';
 
 export default class Navbar extends Component {
   state = {
-    isOpen: false
+    isOpen: false,
+    prevScrollPos: window.pageYOffset,
+    visible: true
   };
 
   handleToggle = () => {
@@ -36,22 +39,31 @@ export default class Navbar extends Component {
             <div className="book">
               <Link to="/rooms">Book</Link>
             </div>
+            <button
+              type="button"
+              className="nav-btn"
+              onClick={this.handleToggle}
+            >
+              <FaBars className="nav-icon" />
+            </button>
           </div>
           <h1 className="hotel-name">Mammoth Park Kazan</h1>
           <div className="nav-header hotel-title">
-            <ul className="contact">
-              <li>Tatarstan St. 7</li>
-              <li>420024</li>
-              <li>Kazan</li>
-              <li>Russia</li>
-              <li>
-                <a href="tel:6715555555">
-                  <FaPhone />
-                  (617)-555-5555
-                </a>
-              </li>
-            </ul>
-            <span>
+            <address>
+              <ul className="contact">
+                <li>Tatarstan St. 7</li>
+                <li>420024</li>
+                <li>Kazan</li>
+                <li>Russia</li>
+                <li>
+                  <a href="tel:6715555555">
+                    <FaPhone />
+                    (617)-555-5555
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <span className="mailto">
               {' '}
               <FaEnvelopeOpen />
               <a href="mailto:contact@mammothpark.com">

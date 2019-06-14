@@ -38,6 +38,10 @@ a {
   color: inherit;
 }
 
+address {
+  font-style: normal;
+}
+
 h1 {
   font-size: 3em;
   line-height: 1;
@@ -109,7 +113,7 @@ h6 {
   left: 0;
   width: 100%;
   padding: 0.75rem 2rem 0;
-  background: var(--offWhite);
+  background: var(--mainWhite);
   z-index: 1;
   /*  */
 }
@@ -118,9 +122,15 @@ h6 {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px #cacaca solid;
-  padding: 0 0 0.75rem;
-  /* align-content: center; */
+  padding: 0.75rem 0;
+  flex-wrap: wrap;
+  position: relative;
 }
+
+.nav-header:nth-of-type(1) {
+  align-items: flex-start;
+}
+
 .nav-btn {
   background: transparent;
   border: none;
@@ -129,13 +139,14 @@ h6 {
 }
 .nav-icon {
   font-size: 1.5rem;
-  color: var(--primaryColor);
+  color: var(--mainBlack);
 }
 /* \\ */
 .bird-logo {
   max-width: 50px;
   color: var(--trueGreen);
   font-size: 3rem;
+  /* margin-bottom: 0.5rem; */
   border-bottom: 7px solid;
   border-image: linear-gradient(
       to left,
@@ -172,6 +183,8 @@ h6 {
 .nav-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .hotel-name {
@@ -187,10 +200,13 @@ h6 {
 .contact {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
-.contact li {
+.contact li,
+span.mailto {
   margin: 0 0.5rem;
-  /* padding: 0.5rem 0; */
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .nav-links {
@@ -202,7 +218,7 @@ h6 {
 .nav-links a {
   display: block;
   text-decoration: none;
-  padding: 1rem 0;
+  padding: 0.75rem 0;
   color: var(--mainBlack);
   transition: var(--mainTransition);
   text-align: center;
@@ -215,9 +231,15 @@ h6 {
 }
 
 .show-nav {
-  height: 100px;
+  /* flex: 1; */
+  height: 90px;
+  transition: var(--mainTransition);
 }
 @media screen and (min-width: 768px) {
+  .nav-container {
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+  }
   .nav-btn {
     display: none;
   }

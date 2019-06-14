@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { FaBars, FaKiwiBird, FaPhone, FaEnvelopeOpen } from 'react-icons/fa';
+import Contacts from './Contacts';
+import { FaBars, FaKiwiBird } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 // import classnames from 'classnames';
 
@@ -47,32 +48,8 @@ export default class Navbar extends Component {
               <FaBars className="nav-icon" />
             </button>
           </div>
-          <h1 className="hotel-name">Mammoth Park Kazan</h1>
-          <div className="nav-header hotel-title">
-            <address>
-              <ul className="contact">
-                <li>Tatarstan St. 7</li>
-                <li>420024</li>
-                <li>Kazan</li>
-                <li>Russia</li>
-                <li>
-                  <a href="tel:6715555555">
-                    <FaPhone />
-                    (617)-555-5555
-                  </a>
-                </li>
-              </ul>
-            </address>
-            <span className="mailto">
-              {' '}
-              <FaEnvelopeOpen />
-              <a href="mailto:contact@mammothpark.com">
-                {' '}
-                contact@mammothpark.com
-              </a>
-            </span>
-          </div>
         </div>
+        <Contacts />
       </nav>
     );
   }

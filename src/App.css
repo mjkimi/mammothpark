@@ -112,41 +112,27 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 2rem 0;
-  background: var(--mainWhite);
   z-index: 1;
-  /*  */
+  overflow: hidden;
 }
 .nav-header {
+  background: var(--mainWhite);
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px #cacaca solid;
-  padding: 0.75rem 0;
+  padding: 0.75rem 2rem;
   flex-wrap: wrap;
   position: relative;
+  z-index: 2;
 }
+/* upper nav */
 
-.nav-header:nth-of-type(1) {
-  align-items: flex-start;
-}
-
-.nav-btn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-.nav-icon {
-  font-size: 1.5rem;
-  color: var(--mainBlack);
-}
 /* \\ */
 .bird-logo {
   max-width: 50px;
   color: var(--trueGreen);
   font-size: 3rem;
-  /* margin-bottom: 0.5rem; */
   border-bottom: 7px solid;
   border-image: linear-gradient(
       to left,
@@ -180,6 +166,44 @@ h6 {
   background: var(--tastyOrange);
 }
 
+.book > a:hover {
+  transition: background-color 0.5s ease-in-out 0s;
+  background-color: #c76b00;
+}
+
+/* lower nav */
+.nav-center {
+  position: relative;
+  z-index: 1;
+}
+
+.lowernav {
+  width: inherit;
+  color: var(--trustyBlue);
+  position: relative;
+  top: 0;
+  padding: 0.75rem 0 0;
+  background: var(--mainWhite);
+  opacity: 1;
+  transition: all 0.5s ease-in;
+  z-index: -1;
+}
+
+.lowernav-hidden {
+  top: -150px;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.nav-icon {
+  font-size: 1.5rem;
+  color: var(--mainBlack);
+}
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -188,13 +212,8 @@ h6 {
 }
 
 .hotel-name {
-  color: var(--trustyBlue);
   font-size: 28px;
-  margin: 0.5rem 0;
-}
-
-.hotel-title {
-  color: var(--trustyBlue);
+  margin-left: 2rem;
 }
 
 .contact {
@@ -243,11 +262,11 @@ span.mailto {
   .nav-btn {
     display: none;
   }
-  .nav-center {
+  /* .nav-center {
     max-width: 95%;
     margin: 0 auto;
-    /* display: flex; */
-  }
+    display: flex;
+  } */
   .nav-links {
     height: auto;
     display: flex;

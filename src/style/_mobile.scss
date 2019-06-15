@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+  // navbar
+  .nav-container {
+    flex-direction: row;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-links {
+    height: auto !important;
+    display: flex;
+    margin-left: 4rem;
+    a {
+      margin: 0 1rem;
+      padding: 0.5rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-item span {
+    font-size: 2rem;
+    padding: 0 1px 6px 15px;
+  }
+  .gallery-item-description,
+  .gallery-bottom {
+    font-size: 1rem;
+    padding: 15px 25px;
+  }
+  .gallery-bottom {
+    padding: 10px 25px;
+  }
+}

@@ -12,22 +12,3 @@ $darkShadow: 4px 10px 5px t0px rgba(0, 0, 0, 0.5);
 $trueGreen: #6e9c20;
 $tastyOrange: #f08100;
 $trustyBlue: #154295;
-
-@media screen and (min-width: 768px) {
-  // navbar
-  .nav-container {
-    flex-direction: row !important;
-  }
-  .nav-btn {
-    display: none;
-  }
-  .nav-links {
-    height: auto;
-    display: flex;
-    margin-left: 4rem;
-    a {
-      margin: 0 1rem;
-      padding: 0.5rem 0;
-    }
-  }
-}

@@ -55,3 +55,76 @@ h6 {
   font-weight: bold;
   margin-bottom: 1.5em;
 }
+
+/* Showcase */
+.defaultShowcase,
+.roomsShowcase {
+  min-height: calc(100vh - 66px);
+  background: url('./images/breakfast.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  // z-index: 1;
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: rgba(0, 0, 0, 0.3);
+  // }
+}
+.roomsShowcase {
+  background-image: url('./images/room-2.jpeg');
+  min-height: 60vh;
+}
+/* End of Showcase */
+.gallery-item-header {
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  max-width: 40%;
+  text-align: right;
+  // z-index: 2;
+
+  span {
+    // z-index: 2;
+    background: $mainWhite;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 0 1px 14px 15px;
+    text-align: right;
+    display: block;
+    mix-blend-mode: screen;
+    line-height: 0.7;
+    text-transform: lowercase;
+    // line-height: 0.7rem;
+    // color: transparent;
+  }
+}
+
+.gallery-item-description {
+  // z-index: 500;
+  display: block;
+  background: rgba($trueGreen, 0.85);
+  padding: 25px 35px;
+  font-size: 2rem;
+  line-height: 1.1;
+  // font-weight: 400;
+  max-width: 50%;
+  color: $mainWhite;
+  letter-spacing: initial;
+}
+
+.gallery-bottom {
+  color: $mainWhite;
+  background: $tastyOrange;
+  padding: 15px 35px;
+  font-size: 1.3rem;
+  line-height: 1;
+  font-weight: 700;
+  max-width: 48%;
+}
+
+@import 'mobile';

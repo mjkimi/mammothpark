@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+import './App.min.css';
+// import './App.css';
 import Home from './components/pages/Home';
 import Rooms from './components/pages/Rooms';
 import SingleRoom from './components/pages/SingleRoom';

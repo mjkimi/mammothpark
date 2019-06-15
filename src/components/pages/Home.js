@@ -9,11 +9,11 @@ const Home = () => {
   return (
     <>
       <Landing landing="defaultShowcase">
-        <Banner title="luxurios rooms" info="deluxe rooms starting at $299">
+        {/* <Banner title="luxurios rooms" info="deluxe rooms starting at $299">
           <Link to="/rooms" className="btn-primary">
             Our Rooms
           </Link>
-        </Banner>
+        </Banner> */}
       </Landing>
       <Services />
       <FeaturedRooms />

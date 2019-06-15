@@ -31,20 +31,20 @@ h1 {
   font-size: 3em;
   line-height: 1;
 }
-h2 {
-  font-size: 2em;
-  margin-bottom: 0.75em;
-}
-h3 {
-  font-size: 1.5em;
-  line-height: 1;
-  margin-bottom: 1em;
-}
-h4 {
-  font-size: 1.2em;
-  line-height: 1.25;
-  margin-bottom: 1.25em;
-}
+// h2 {
+//   font-size: 2em;
+//   margin-bottom: 0.75em;
+// }
+// h3 {
+//   font-size: 1.5em;
+//   line-height: 1;
+//   margin-bottom: 1em;
+// }
+// h4 {
+//   font-size: 1.2em;
+//   line-height: 1.25;
+//   margin-bottom: 1.25em;
+// }
 h5 {
   font-size: 1em;
   font-weight: bold;
@@ -125,6 +125,88 @@ h6 {
   line-height: 1;
   font-weight: 700;
   max-width: 48%;
+}
+
+// explore
+.explore {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  float: none;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 30px;
+}
+
+.article {
+  color: $mainBlack;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  letter-spacing: 0;
+  &-header {
+    color: $trueGreen;
+    font-size: 2.75rem;
+    font-weight: 700;
+    padding: 2rem 0 1rem;
+    line-height: initial;
+  }
+  &-subheader {
+    color: $trueGreen;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    line-height: 1;
+  }
+  ul {
+    margin-left: 1rem;
+  }
+  li {
+    padding: 0.5rem 0;
+  }
+}
+
+.sidebar {
+  margin: 1.75rem 0;
+  color: $mainWhite;
+  width: 100%;
+  max-width: 230px;
+  .price-teaser {
+    background: #016c7e;
+    padding: 15px 15px 10px;
+    text-align: center;
+
+    span {
+      display: block;
+      line-height: 1;
+    }
+    span.price-text {
+      font-size: 1.3rem;
+    }
+    span.price {
+      margin-top: 5px;
+      font-size: 2.2rem;
+    }
+  }
+  .hotel-at-glance {
+    background: #0199b1;
+    padding: 2rem 1.5rem;
+    h4 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      border-bottom: 1px solid $mainWhite;
+      padding-bottom: 0.5rem;
+    }
+    ul {
+      margin: 1rem 0 0 0.5rem;
+      padding-left: 0.2rem;
+      font-size: 0.95rem;
+      letter-spacing: normal;
+    }
+    li {
+      padding: 0.2rem;
+    }
+  }
 }
 
 @import 'mobile';

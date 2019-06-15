@@ -1,3 +1,4 @@
+// Big screens
 @media screen and (min-width: 768px) {
   // navbar
   .nav-container {
@@ -17,6 +18,17 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .explore {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    .sidebar {
+      max-width: 100%;
+    }
+  }
+}
+
+// Small devices
 @media screen and (max-width: 767px) {
   .gallery-item span {
     font-size: 2rem;

@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import { RoomContext } from '../Context';
+import Spinner from './Spinner';
 
 export default class Description extends Component {
+  static contextType = RoomContext;
   render() {
+    const { loading, minPrice } = this.context;
     return (
       <section className="explore">
         <div className="article">
@@ -40,15 +44,6 @@ export default class Description extends Component {
           and Islamic. We're just a 7-minute drive from the Tatar Musa Jalil
           State Academic Theatre of Opera and Ballet, or 9 minutes from the
           Kazan Kremlin.
-          <br />
-          <br />
-          {/* After a 25-minute drive from the hotel, you can marvel at the colorful
-          Temple of All Religions, with its 16 towers devoted to 16 different
-          faiths. A visit to the Raifa Monastery is a must. This gorgeous
-          lakeside retreat in the middle of a forest is under an hour's drive
-          from Kazan.
-          <br />
-          <br /> */}
           <ul>
             <li>
               Under 10 minutes' drive from the Theater of Opera and Ballet and
@@ -74,7 +69,9 @@ export default class Description extends Component {
             <span className="price-text">
               From $
               <span className="price">
-                <strong>200</strong>
+                <strong>
+                  {loading ? <Spinner bgcolor="blue" /> : minPrice}
+                </strong>
               </span>
             </span>
           </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Landing from '../layout/Landing';
-import Banner from '../layout/Banner';
-import { Link } from 'react-router-dom';
+// import Banner from '../layout/Banner';
+// import { Link } from 'react-router-dom';
 // import Services from '../Services';
 import FeaturedRooms from '../FeaturedRooms';
 import Description from '../Description';

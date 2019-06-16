@@ -1,11 +1,15 @@
 import React from 'react';
-import spinner from '../images/gif/loading-arrow.gif';
+import spinnerBlue from '../images/gif/loading-bluebg.gif';
+import spinnerWhite from '../images/gif/loading-whitebg.gif';
 
-export default function Spinner() {
+export default function Spinner({ bgcolor }) {
   return (
     <div className="loading">
       <h4>rooms data loading...</h4>
-      <img src={spinner} alt="" />
+      <img
+        src={bgcolor === 'blue' ? spinnerBlue : spinnerWhite}
+        alt="loading"
+      />
     </div>
   );
 }

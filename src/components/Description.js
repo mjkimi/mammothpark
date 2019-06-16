@@ -7,7 +7,7 @@ export default class Description extends Component {
   render() {
     const { loading, minPrice } = this.context;
     return (
-      <section className="explore">
+      <section className="explore narrow">
         <div className="article">
           <h2 className="article-header">
             Explore the Tatarstan Republic capital from our Kazan hotel

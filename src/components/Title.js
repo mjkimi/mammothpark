@@ -5,7 +5,6 @@ export default function Title({ title }) {
     <div>
       <div className="section-title">
         <h4>{title}</h4>
-        <hr />
       </div>
     </div>
   );

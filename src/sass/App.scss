@@ -2,6 +2,7 @@
 
 @import 'config';
 @import 'navbar';
+@import 'room';
 
 * {
   box-sizing: border-box;
@@ -56,6 +57,14 @@ h6 {
   margin-bottom: 1.5em;
 }
 
+section.narrow {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  float: none;
+  overflow: hidden;
+}
+
 /* Showcase */
 .defaultShowcase,
 .roomsShowcase {
@@ -80,16 +89,26 @@ h6 {
   background-image: url('./images/room-2.jpeg');
   min-height: 60vh;
 }
+
+.gallery-room {
+  position: absolute;
+  top: 0%;
+  z-index: 1;
+  text-align: center;
+  .gallery-item-header span {
+    color: $trueGreen;
+    font-size: 3rem;
+    line-height: 0.8;
+  }
+}
 /* End of Showcase */
 .gallery-item-header {
   background: rgba(0, 0, 0, 0.3);
   overflow: hidden;
   max-width: 40%;
   text-align: right;
-  // z-index: 2;
 
   span {
-    // z-index: 2;
     background: $mainWhite;
     font-size: 4rem;
     font-weight: 700;
@@ -99,19 +118,15 @@ h6 {
     mix-blend-mode: screen;
     line-height: 0.7;
     text-transform: lowercase;
-    // line-height: 0.7rem;
-    // color: transparent;
   }
 }
 
 .gallery-item-description {
-  // z-index: 500;
   display: block;
   background: rgba($trueGreen, 0.85);
   padding: 25px 35px;
   font-size: 2rem;
   line-height: 1.1;
-  // font-weight: 400;
   max-width: 50%;
   color: $mainWhite;
   letter-spacing: initial;
@@ -129,11 +144,6 @@ h6 {
 
 // explore
 .explore {
-  max-width: 900px;
-  width: 100%;
-  margin: 0 auto;
-  float: none;
-  overflow: hidden;
   display: grid;
   grid-template-columns: 70% 30%;
   grid-gap: 30px;
@@ -172,7 +182,7 @@ h6 {
   width: 100%;
   max-width: 230px;
   .price-teaser {
-    background: #016c7e;
+    background: $topBlue;
     padding: 15px 15px 10px;
     text-align: center;
 
@@ -189,7 +199,7 @@ h6 {
     }
   }
   .hotel-at-glance {
-    background: #0199b1;
+    background: $tenderBlue;
     padding: 2rem 1.5rem;
     h4 {
       font-weight: 700;
@@ -205,6 +215,35 @@ h6 {
     }
     li {
       padding: 0.2rem;
+    }
+  }
+}
+
+section.nearby {
+  color: $mainWhite;
+  background: $tenderBlue;
+  margin-bottom: 2rem;
+  h2 {
+    padding: 1rem 1.5rem;
+    font-size: 1.75rem;
+    line-height: 1;
+    font-weight: 700;
+  }
+  .grid-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+  }
+  .sight {
+    background: $topBlue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 1.5rem;
+    font-size: 1.1rem;
+    span {
+      min-width: 50px;
     }
   }
 }

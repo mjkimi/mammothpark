@@ -30,6 +30,7 @@
 
 // Small devices
 @media screen and (max-width: 767px) {
+  // Staircase component
   .gallery-item span {
     font-size: 2rem;
     padding: 0 1px 6px 15px;
@@ -41,5 +42,13 @@
   }
   .gallery-bottom {
     padding: 10px 25px;
+  }
+  // Featured rooms
+  .featured-rooms-center {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  // Nearby
+  .grid-info {
+    grid-template-columns: 1fr !important;
   }
 }

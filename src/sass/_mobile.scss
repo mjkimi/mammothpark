@@ -48,7 +48,8 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
   // Nearby
-  .grid-info {
+  .grid-info,
+  section.newsletter {
     grid-template-columns: 1fr !important;
   }
 }

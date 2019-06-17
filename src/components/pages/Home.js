@@ -1,11 +1,11 @@
 import React from 'react';
 import Landing from '../layout/Landing';
-// import Banner from '../layout/Banner';
-// import { Link } from 'react-router-dom';
-// import Services from '../Services';
 import FeaturedRooms from '../FeaturedRooms';
 import Description from '../Description';
 import Staircase from '../Staircase';
+import Nearby from '../Nearby';
+import Newsletter from '../Newsletter';
+import Footer from '../Footer';
 
 const Home = () => {
   return (
@@ -18,32 +18,10 @@ const Home = () => {
         />
       </Landing>
       <Description />
-      {/* <Services /> */}
       <FeaturedRooms />
-      <section className="nearby narrow">
-        <h2>Nearby</h2>
-
-        <div className="grid-info">
-          <div className="sight">
-            <span>Staro-Tatarskaya Sloboda</span>
-            <span>500 m</span>
-          </div>
-          <div className="sight">
-            <span>Pedestrian street Ulitsa Baumana</span>
-            <span>1 km</span>
-          </div>
-          <div className="sight">
-            <span>
-              Kremlin, Qolşärif Mosque, Söyembikä Tower, Annunciation Cathedral{' '}
-            </span>
-            <span>2.5 km</span>
-          </div>
-          <div className="sight">
-            <span>Kazan Arena </span>
-            <span>7 km</span>
-          </div>
-        </div>
-      </section>
+      <Nearby />
+      <Newsletter />
+      <Footer />
     </>
   );
 };

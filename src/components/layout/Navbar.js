@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Contacts from './Contacts';
 import { FaBars, FaKiwiBird } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-// import classnames from 'classnames';
 
 export default class Navbar extends Component {
   state = {

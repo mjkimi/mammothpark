@@ -21,8 +21,8 @@ export default [
       id: '1'
     },
     fields: {
-      name: 'single economy',
-      slug: 'single-economy',
+      name: 'standard king room',
+      slug: 'standard king room',
       type: 'single',
       price: 100,
       size: 200,
@@ -31,15 +31,16 @@ export default [
       breakfast: false,
       featured: false,
       description:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'Smart, fuss-free and modern. Unwind with one king bed and all standard amenities in our Standard King Room. tay connected with our free Wi-Fi, while enjoying a hot drink from the in-room coffee and tea making facilities. All rooms include a steam iron and ironing board, so you can look your best. Approximate size: 17 m2',
       extras: [
-        'Plush pillows and breathable bed linens',
-        'Soft, oversized bath towels',
-        'Full-sized, pH-balanced toiletries',
-        'Complimentary refreshments',
-        'Adequate safety/security',
-        'Internet',
-        'Comfortable beds'
+        'Separate sleeping and living area',
+        'Free Wireless High-speed Internet',
+        'Complimentary mineral water',
+        'Tea and coffee set',
+        'Satellite television',
+        '32-inch flat-screen TV',
+        'Private workplace',
+        'Hair dryer'
       ],
       images: [
         {
@@ -78,8 +79,8 @@ export default [
       id: '2'
     },
     fields: {
-      name: 'single basic',
-      slug: 'single-basic',
+      name: 'corner junior suite',
+      slug: 'corner junior suite',
       type: 'single',
       price: 150,
       size: 250,
@@ -88,15 +89,16 @@ export default [
       breakfast: false,
       featured: false,
       description:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'Perfect for extended stays, this extra-large corner room offers a sleeper sofa and plenty of room to stretch out. Built for the modern, tech savvy traveler who seeks space & comfort paired with unmatched level of service.',
       extras: [
-        'Plush pillows and breathable bed linens',
-        'Soft, oversized bath towels',
-        'Full-sized, pH-balanced toiletries',
-        'Complimentary refreshments',
-        'Adequate safety/security',
-        'Internet',
-        'Comfortable beds'
+        'Separate sleeping and living area',
+        'Free Wireless High-speed Internet',
+        'Complimentary mineral water',
+        'Tea and coffee set',
+        'Satellite television',
+        '32-inch flat-screen TV',
+        'Private workplace',
+        'Hair dryer'
       ],
       images: [
         {
@@ -135,8 +137,8 @@ export default [
       id: '3'
     },
     fields: {
-      name: 'single standard',
-      slug: 'single-standard',
+      name: 'executive king suite',
+      slug: 'executive-king-suite',
       type: 'single',
       price: 250,
       size: 300,
@@ -145,15 +147,17 @@ export default [
       breakfast: false,
       featured: false,
       description:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'These are ideal if you enjoy spacious surroundings. They include the same amenities as the Superior Rooms, while also offering more space for extra comfort. Spacious but cozy, trendy but unpretentious.',
       extras: [
-        'Plush pillows and breathable bed linens',
-        'Soft, oversized bath towels',
-        'Full-sized, pH-balanced toiletries',
-        'Complimentary refreshments',
-        'Adequate safety/security',
-        'Internet',
-        'Comfortable beds'
+        'Free WiFi',
+        'Coffee & tea making facilities',
+        'Complimentary water',
+        'In-room safe ',
+        'Hairdryer',
+        'Shower only',
+        'Bathrobes and Slippers',
+        'LCD TV',
+        'Iron and ironing board'
       ],
       images: [
         {
@@ -192,26 +196,25 @@ export default [
       id: '4'
     },
     fields: {
-      name: 'single deluxe',
-      slug: 'single-deluxe',
+      name: 'single room',
+      slug: 'single-room',
       type: 'single',
       price: 300,
       size: 400,
       capacity: 1,
       pets: false,
       breakfast: true,
-      view: true,
       featured: false,
       description:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'Our Single Room is ideal for single travelers. Enjoy a good night’s sleep on the single bed and start your day with a hot drink from the in-room coffee and tea making facilities. Stay easily connected with your loved ones throughout the day with our free Wi-Fi. Approximate size: 17 m2',
       extras: [
-        'Plush pillows and breathable bed linens',
-        'Soft, oversized bath towels',
-        'Full-sized, pH-balanced toiletries',
-        'Complimentary refreshments',
-        'Adequate safety/security',
-        'Internet',
-        'Comfortable beds'
+        'Free Wireless High-speed Internet',
+        'Complimentary mineral water',
+        'Tea and coffee set',
+        'Satellite television',
+        '32-inch flat-screen TV',
+        'Private workplace',
+        'Hair dryer'
       ],
       images: [
         {
@@ -250,8 +253,8 @@ export default [
       id: '5'
     },
     fields: {
-      name: 'double economy',
-      slug: 'double-economy',
+      name: 'standard room',
+      slug: 'standard-room',
       type: 'double',
       price: 200,
       size: 300,
@@ -260,15 +263,15 @@ export default [
       breakfast: false,
       featured: false,
       description:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'Our Standard Rooms pamper guests with quality amenities and plush bedding. Keep connected with friends and family with Free Wireless High-speed Internet or unwind at the end of the day while watching your favourite programme on the flat-screen television. Approximate size: up to 16 m2.',
       extras: [
-        'Plush pillows and breathable bed linens',
-        'Soft, oversized bath towels',
-        'Full-sized, pH-balanced toiletries',
-        'Complimentary refreshments',
-        'Adequate safety/security',
-        'Internet',
-        'Comfortable beds'
+        'Free WiFi ',
+        'Coffee & tea making facilities',
+        'Complimentary water ',
+        'In-room safe ',
+        'Hairdryer ',
+        'LCD TV',
+        'Iron and ironing board'
       ],
       images: [
         {
@@ -307,25 +310,27 @@ export default [
       id: '6'
     },
     fields: {
-      name: 'double basic',
-      slug: 'double-basic',
+      name: 'superior room',
+      slug: 'superior room',
       type: 'double',
       price: 250,
       size: 350,
-      capacity: 2,
+      capacity: 3,
       pets: false,
       breakfast: false,
       featured: false,
       description:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'Enjoy more space and added amenities with a Superior Room, which gives you all Standard Room features as well as a bathrobes and slippers and tea and coffee provisions. Finish your presentation or check your email at the room’s work desk, and then unwind with a cup of coffee or tea as you watch a show on satellite television. Approximate size: up to 20 m2',
       extras: [
-        'Plush pillows and breathable bed linens',
-        'Soft, oversized bath towels',
-        'Full-sized, pH-balanced toiletries',
-        'Complimentary refreshments',
-        'Adequate safety/security',
-        'Internet',
-        'Comfortable beds'
+        'Free WiFi',
+        'Coffee & tea making facilities',
+        'Complimentary water',
+        'In-room safe ',
+        'Hairdryer',
+        'Shower only',
+        'Bathrobes and Slippers',
+        'LCD TV',
+        'Iron and ironing board'
       ],
       images: [
         {
@@ -364,25 +369,29 @@ export default [
       id: '7'
     },
     fields: {
-      name: 'double standard',
-      slug: 'double-standard',
+      name: 'superior rooms - city view',
+      slug: 'superior-room_city-view',
       type: 'double',
       price: 300,
       size: 400,
-      capacity: 2,
+      capacity: 3,
       pets: true,
       breakfast: false,
       featured: false,
+      view: true,
       description:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'Superior Room with the view to the city center of Kazan will fill your stay with unforgettable moments. Feel the atmosphere of the historical part of the city enjoying your stay in a comfortable room with upgraded facilities, including bathrobes and slippers and ironing amenities. Approximate size: up to 20 m2 ',
       extras: [
-        'Plush pillows and breathable bed linens',
-        'Soft, oversized bath towels',
-        'Full-sized, pH-balanced toiletries',
-        'Complimentary refreshments',
-        'Adequate safety/security',
-        'Internet',
-        'Comfortable beds'
+        'Free WiFi',
+        'Coffee & tea making facilities',
+        'Complimentary water',
+        'In-room safe ',
+        'Hairdryer',
+        'Shower only',
+        'Bathrobes and Slippers',
+        'LCD TV',
+        'Steam iron and ironing board',
+        'Upgraded bathroom amenities'
       ],
       images: [
         {
@@ -421,27 +430,30 @@ export default [
       id: '8'
     },
     fields: {
-      name: 'double deluxe',
-      slug: 'double-deluxe',
+      name: 'superior room - city view & balcony',
+      slug: 'superior-room_city-view&balcony',
       type: 'double',
       price: 400,
       size: 500,
-      capacity: 2,
+      capacity: 3,
       pets: true,
       breakfast: true,
       featured: true,
       view: true,
       special: 'Save up to 20%',
       description:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'Superior Room - City View & Balcony will enchant our guests. Meet the dawn with the cup of your favourite coffee on the balcony of your room and enjoy your morning. Approximate size: up to 20 m2',
       extras: [
-        'Plush pillows and breathable bed linens',
-        'Soft, oversized bath towels',
-        'Full-sized, pH-balanced toiletries',
-        'Complimentary refreshments',
-        'Adequate safety/security',
-        'Internet',
-        'Comfortable beds'
+        'Free WiFi',
+        'Coffee & tea making facilities',
+        'Complimentary water',
+        'In-room safe ',
+        'Hairdryer',
+        'Shower only',
+        'Bathrobes and Slippers',
+        'LCD TV',
+        'Steam iron and ironing board',
+        'Upgraded bathroom amenities'
       ],
       images: [
         {
@@ -480,25 +492,33 @@ export default [
       id: '9'
     },
     fields: {
-      name: 'family economy',
-      slug: 'family-economy',
+      name: 'junior suite',
+      slug: 'junior-suite',
       type: 'family',
       price: 300,
       size: 500,
-      capacity: 3,
+      capacity: 4,
       pets: false,
       breakfast: false,
+      view: true,
       featured: false,
       description:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'Junior Suites offer sweeping cityscape views and a spacious floor plan that is ideal for larger travel groups or families. They feature all the amenities of a Business Friendly Room plus more. Sip a refreshing drink from the room’s mini bar, and then luxuriate in the bathtub after a long day. A sofa bed in the lounge area provides extra room for kids or guests. Approximate size: 35 m2',
       extras: [
-        'Plush pillows and breathable bed linens',
-        'Soft, oversized bath towels',
-        'Full-sized, pH-balanced toiletries',
-        'Complimentary refreshments',
-        'Adequate safety/security',
-        'Internet',
-        'Comfortable beds'
+        'Bathrobe and slippers',
+        'Bathtub',
+        'Complimentary mineral water',
+        'Flat-screen TV',
+        'Free Wireless High-speed Internet access',
+        'Heated bathroom floors',
+        'Iron and ironing board',
+        'Mini bar',
+        'Nespresso® coffee machine',
+        'Panoramic views',
+        'Safe',
+        'Sofa bed',
+        'Upgraded bathroom amenities',
+        'Work desk'
       ],
       images: [
         {
@@ -537,7 +557,7 @@ export default [
       id: '10'
     },
     fields: {
-      name: 'family basic',
+      name: 'family room',
       slug: 'family-basic',
       type: 'family',
       price: 350,
@@ -547,15 +567,20 @@ export default [
       breakfast: false,
       featured: false,
       description:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'This accomodation offers spacious Family Rooms with king-size bed and sofa beds. Enjoy the atmosphere and relax with friends or family in front of cable television with a hot cup of coffee from Espresso machine. Approximate size: 38 m2 ',
       extras: [
-        'Plush pillows and breathable bed linens',
-        'Soft, oversized bath towels',
-        'Full-sized, pH-balanced toiletries',
-        'Complimentary refreshments',
-        'Adequate safety/security',
-        'Internet',
-        'Comfortable beds'
+        'Free WiFi',
+        'In-room safe',
+        'Professional hairdryer',
+        'Individual climate control',
+        '32-inch flat-screen TV with satellite',
+        'Espresso Coffee machine & coffee and tea making facilities',
+        'Magnifying mirror',
+        'Bathrobe & slippers',
+        'Enhanced bathroom amenities',
+        'Steam iron & ironing board',
+        '2 foldable extra sofa beds',
+        'Complimentary water'
       ],
       images: [
         {
@@ -594,8 +619,8 @@ export default [
       id: '11'
     },
     fields: {
-      name: 'family standard',
-      slug: 'family-standard',
+      name: 'friends & family stay',
+      slug: 'friends&family-stay',
       type: 'family',
       price: 400,
       size: 600,
@@ -604,15 +629,17 @@ export default [
       breakfast: false,
       featured: false,
       description:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'Friends & Family Stay - Multiple Rooms will suit for those who travel with big company whether with friends or family. These 2 connected rooms make a fine retreat for those who desires extra space and time to relax in a comfortable bed with a cup of tea.Take advantage of Free High-speed Internet and 2 flat screen cable television.',
       extras: [
-        'Plush pillows and breathable bed linens',
-        'Soft, oversized bath towels',
-        'Full-sized, pH-balanced toiletries',
-        'Complimentary refreshments',
-        'Adequate safety/security',
-        'Internet',
-        'Comfortable beds'
+        'Two connecting rooms assigned at check-in if booked for 3 or more guests',
+        'Free WiFi',
+        'In-room safe',
+        'Professional hairdryer',
+        'Individual climate control',
+        '32-inch flat-screen TV with satellite',
+        'Coffee and tea making facilities',
+        'Magnifying mirror',
+        'Complimentary water'
       ],
       images: [
         {
@@ -651,91 +678,45 @@ export default [
       id: '12'
     },
     fields: {
-      name: 'family deluxe',
-      slug: 'family-deluxe',
-      type: 'family',
+      name: 'Suite',
+      slug: 'suite',
+      type: 'suite',
       price: 500,
       size: 700,
-      capacity: 6,
+      capacity: 3,
       pets: true,
       breakfast: true,
       featured: true,
       view: true,
       special: 'Save up to 15%',
       description:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'The spacious Suites, which are decorated in rich colours. Enjoy spectacular views, a comfortable bed, a free sauna and individual air conditioning when staying in these hotel rooms in Mammoth Park. Approximate size: 46 m2',
       extras: [
-        'Plush pillows and breathable bed linens',
-        'Soft, oversized bath towels',
-        'Full-sized, pH-balanced toiletries',
-        'Complimentary refreshments',
-        'Adequate safety/security',
-        'Internet',
-        'Comfortable beds'
+        '32-inch flat-screen TV',
+        'Bathrobe and slippers',
+        'Central air conditioning system',
+        'Complimentary mineral water',
+        'Free Wireless High-speed Internet',
+        'Hair dryer',
+        'Individual bathroom amenities',
+        'International telephone',
+        'Iron and ironing board',
+        'Laundry and dry cleaning available',
+        'Mini bar',
+        'Panoramic view',
+        'Personal safe',
+        'Private workplace',
+        'Room service',
+        'Satellite television',
+        'Tea and coffee set',
+        'Nespresso® capsule coffee machine+ 6 capsules',
+        '2 hours of SPA'
       ],
       images: [
         {
           fields: {
             file: {
               url: img12
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
-  },
-  {
-    sys: {
-      id: '13'
-    },
-    fields: {
-      name: 'presidential',
-      slug: 'presidential-room',
-      type: 'presidential',
-      price: 600,
-      size: 1000,
-      capacity: 10,
-      pets: true,
-      breakfast: true,
-      view: true,
-      featured: false,
-      description:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
-      extras: [
-        'Plush pillows and breathable bed linens',
-        'Soft, oversized bath towels',
-        'Full-sized, pH-balanced toiletries',
-        'Complimentary refreshments',
-        'Adequate safety/security',
-        'Internet',
-        'Comfortable beds'
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: room1
             }
           }
         },

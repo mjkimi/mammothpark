@@ -18,8 +18,10 @@ class RoomProvider extends Component {
     minSize: 0,
     maxSize: 0,
     breakfast: false,
-    pets: false
+    pets: false,
+    view: false
   };
+  initialState = {};
 
   // getData
   componentDidMount() {
@@ -29,7 +31,8 @@ class RoomProvider extends Component {
     let minPrice = Math.min(...rooms.map(room => room.price));
     let maxSize = Math.max(...rooms.map(room => room.size));
 
-    this.setState({
+    this.initialState = {
+      ...this.state,
       rooms,
       featuredRooms,
       sortedRooms: rooms,
@@ -38,7 +41,8 @@ class RoomProvider extends Component {
       maxPrice,
       minPrice,
       maxSize
-    });
+    };
+    this.setState(this.initialState);
   }
 
   getRoom = slug => {
@@ -79,7 +83,8 @@ class RoomProvider extends Component {
       minSize,
       maxSize,
       breakfast,
-      pets
+      pets,
+      view
     } = this.state;
 
     // all the rooms
@@ -105,17 +110,24 @@ class RoomProvider extends Component {
       room => room.size >= minSize && room.size <= maxSize
     );
 
-    // filter by breakfast & pets
+    // filter by breakfast , pets , view
     if (breakfast) {
       tempRooms = tempRooms.filter(room => room.breakfast === true);
     }
     if (pets) {
       tempRooms = tempRooms.filter(room => room.pets === true);
     }
+    if (view) {
+      tempRooms = tempRooms.filter(room => room.view === true);
+    }
 
     this.setState({
       sortedRooms: tempRooms
     });
+  };
+
+  clearFilter = event => {
+    this.setState(this.initialState);
   };
 
   render() {
@@ -124,7 +136,8 @@ class RoomProvider extends Component {
         value={{
           ...this.state,
           getRoom: this.getRoom,
-          handleChange: this.handleChange
+          handleChange: this.handleChange,
+          clearFilter: this.clearFilter
         }}
       >
         {this.props.children}

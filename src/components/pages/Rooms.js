@@ -1,7 +1,7 @@
 import React from 'react';
 import Landing from '../layout/Landing';
 // import Banner from '../layout/Banner';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import RoomsContainer from '../RoomsContainer';
 
 const Rooms = () => {

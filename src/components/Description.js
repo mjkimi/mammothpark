@@ -44,7 +44,7 @@ export default class Description extends Component {
           and Islamic. We're just a 7-minute drive from the Tatar Musa Jalil
           State Academic Theatre of Opera and Ballet, or 9 minutes from the
           Kazan Kremlin.
-          <ul>
+          <ul className="standard-list">
             <li>
               Under 10 minutes' drive from the Theater of Opera and Ballet and
               the Kazan Kremlin.

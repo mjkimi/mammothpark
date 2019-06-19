@@ -5,6 +5,9 @@ import Banner from '../layout/Banner';
 import { Link } from 'react-router-dom';
 import { RoomContext } from '../../Context';
 import StyledLanding from '../StyledLanding';
+import Gallery from '../Gallery';
+import Newsletter from '../Newsletter';
+import Footer from '../Footer';
 
 export default class SingleRoom extends Component {
   constructor(props) {
@@ -55,12 +58,9 @@ export default class SingleRoom extends Component {
           </Banner>
         </StyledLanding>
         <section className="single-room">
-          <div className="single-room-images">
-            {otherImg.map((img, index) => {
-              return <img key={index} src={img} alt={name} />;
-            })}
-          </div>
-          <div className="single-room-info">
+          <Gallery imgs={otherImg} />
+          {/* <div className="single-room-info"> */}
+          <article className="narrow">
             <article className="desc">
               <h3>details</h3>
               <p>{description}</p>
@@ -76,16 +76,21 @@ export default class SingleRoom extends Component {
               <h6>{pets ? 'pets allowed' : 'no pets allowed'}</h6>
               <h6>{breakfast && 'free breakfast included'}</h6>
             </article>
-          </div>
+
+            {/* </div> */}
+
+            {/* <section className="room-extras"> */}
+            <h6 className="article-subheader">Key features:</h6>
+            <ul className="standard-list">
+              {extras.map((point, index) => {
+                return <li key={index}> {point}</li>;
+              })}
+            </ul>
+            {/* </section> */}
+          </article>
         </section>
-        <section className="room-extras">
-          <h6>extras</h6>
-          <ul className="extras">
-            {extras.map((point, index) => {
-              return <li key={index}>- {point}</li>;
-            })}
-          </ul>
-        </section>
+        <Newsletter />
+        <Footer />
       </>
     );
   }

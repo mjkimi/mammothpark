@@ -40,7 +40,7 @@ export default function RoomsContainer() {
                 Accessible rooms and amenities are available and may include the
                 following features:
                 <br />
-                <ul>
+                <ul className="standard-list">
                   <li>Amenities within accessible range to reach</li>
                   <li>Braille elevators</li>
                   <li>Grab bars alongside toilet</li>

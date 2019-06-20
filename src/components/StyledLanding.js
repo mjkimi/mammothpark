@@ -8,6 +8,7 @@ const StyledLanding = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 `;
 
 export default StyledLanding;

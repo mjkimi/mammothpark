@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Spinner from './Spinner';
+import { FaTimes, FaSearch } from 'react-icons/fa';
 
 class Gallery extends Component {
   state = {
@@ -17,36 +18,48 @@ class Gallery extends Component {
   // }
 
   render() {
-    const { imgs } = this.props;
+    const { imgs, name } = this.props;
     let imageListContent;
     if (imgs) {
       imageListContent = (
         <div className="single-room-images">
           {imgs.map((img, index) => {
             return (
-              <img
-                key={index}
-                src={img}
-                alt=""
-                onClick={() => this.handleOpen(img)}
-              />
+              <div className="single-image">
+                <FaSearch className="zoom" />
+                <img
+                  key={index}
+                  src={img}
+                  alt=""
+                  onClick={() => this.handleOpen(img)}
+                />
+              </div>
             );
           })}
         </div>
       );
     } else {
-      imageListContent = <Spinner />;
+      imageListContent = <Spinner bgcolor="blue" />;
     }
     return (
       <>
         {imageListContent}
         {this.state.showModal ? (
           <div onClick={this.handleClose} className="gallery">
-            <img
-              src={this.state.currentImg}
-              alt="Gallery Image"
-              className="gallery-img"
-            />
+            <div className="image-wrapper">
+              <img
+                src={this.state.currentImg}
+                alt="Gallery Image"
+                className="gallery-img"
+              />
+              <span className="gallery-close">
+                <FaTimes /> Close
+              </span>
+              <div className="photo-caption">
+                <span className="caption">{name}</span>
+                <span className="fake-border" />
+              </div>
+            </div>
           </div>
         ) : null}
       </>

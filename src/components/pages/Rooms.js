@@ -1,22 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Landing from '../layout/Landing';
-// import Banner from '../layout/Banner';
-// import { Link } from 'react-router-dom';
 import RoomsContainer from '../RoomsContainer';
+import LandingStaircase from '../LandingStaircase';
+import Spinner from '../Spinner';
+import { RoomContext } from '../../Context';
 
-const Rooms = () => {
-  return (
-    <>
-      <Landing landing="roomsShowcase">
-        {/* <Banner title="our rooms"> */}
-        {/* <Link to="/" className="btn-primary">
-          return home
-        </Link> */}
-        {/* </Banner> */}
-      </Landing>
-      <RoomsContainer />
-    </>
-  );
-};
+class Rooms extends Component {
+  static contextType = RoomContext;
+
+  render() {
+    const { loading, minPrice } = this.context;
+    return (
+      <>
+        <Landing landing="roomsShowcase">
+          <LandingStaircase
+            addclass="content-all"
+            headerline="Our Colorful Rooms"
+            maininfo={loading ? <Spinner /> : `From $ ${minPrice}`}
+          />
+        </Landing>
+        <RoomsContainer />
+      </>
+    );
+  }
+}
 
 export default Rooms;

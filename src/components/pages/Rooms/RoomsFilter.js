@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { RoomContext } from '../Context';
-import Title from './Title';
+import { RoomContext } from '../../../Context';
+import Title from '../../layout/Title';
 import {
   FaHotel,
   FaUserFriends,

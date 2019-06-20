@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Spinner from './Spinner';
+import Spinner from '../../layout/Spinner';
 import { FaTimes, FaSearch } from 'react-icons/fa';
 
 class Gallery extends Component {
@@ -15,7 +15,6 @@ class Gallery extends Component {
   handleClose = () => {
     this.setState({ showModal: false });
   };
-  // }
 
   render() {
     const { imgs, name } = this.props;
@@ -25,14 +24,13 @@ class Gallery extends Component {
         <div className="single-room-images">
           {imgs.map((img, index) => {
             return (
-              <div className="single-image">
+              <div
+                key={index}
+                className="single-image"
+                onClick={() => this.handleOpen(img)}
+              >
                 <FaSearch className="zoom" />
-                <img
-                  key={index}
-                  src={img}
-                  alt=""
-                  onClick={() => this.handleOpen(img)}
-                />
+                <img src={img} alt="" />
               </div>
             );
           })}
@@ -47,11 +45,7 @@ class Gallery extends Component {
         {this.state.showModal ? (
           <div onClick={this.handleClose} className="gallery">
             <div className="image-wrapper">
-              <img
-                src={this.state.currentImg}
-                alt="Gallery Image"
-                className="gallery-img"
-              />
+              <img src={this.state.currentImg} alt="" className="gallery-img" />
               <span className="gallery-close">
                 <FaTimes /> Close
               </span>

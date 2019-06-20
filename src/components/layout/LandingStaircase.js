@@ -6,7 +6,6 @@ function LandingStaicase({ addclass, headerline, maininfo, more }) {
   return (
     <div className={`block-content ${addclass}`}>
       <div className="first">
-        {/* <div className=> */}
         <strong>{headerline}</strong>
       </div>
       {more ? (
@@ -21,6 +20,14 @@ function LandingStaicase({ addclass, headerline, maininfo, more }) {
   );
 }
 
-LandingStaicase.propTypes = {};
+LandingStaicase.propTypes = {
+  addclass: PropTypes.string,
+  headerline: PropTypes.string.isRequired,
+  maininfo: PropTypes.oneOfType([
+    PropTypes.string.isRequired,
+    PropTypes.object.isRequired
+  ]),
+  more: PropTypes.string
+};
 
 export default LandingStaicase;

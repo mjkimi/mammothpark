@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import defaultImg from '../../images/room-1.jpeg';
-import Landing from '../layout/Landing';
-import Banner from '../layout/Banner';
+import defaultImg from '../../../images/room-1.jpeg';
 import { Link } from 'react-router-dom';
-import { RoomContext } from '../../Context';
-import StyledLanding from '../StyledLanding';
-import Gallery from '../Gallery';
-import Newsletter from '../Newsletter';
-import Footer from '../Footer';
-import LandingStaircase from '../LandingStaircase';
+import { RoomContext } from '../../../Context';
+import StyledLanding from '../../layout/StyledLanding';
+import Gallery from './Gallery';
+import Newsletter from '../../layout/Newsletter';
+import Footer from '../../layout/Footer';
+import LandingStaircase from '../../layout/LandingStaircase';
 
 export default class SingleRoom extends Component {
   constructor(props) {
@@ -52,11 +50,6 @@ export default class SingleRoom extends Component {
     return (
       <>
         <StyledLanding img={mainImg || this.state.defaultImg}>
-          {/* <Banner title={`${name} `}>
-            <Link to="/rooms" className="btn-primary">
-              back to rooms
-            </Link>
-          </Banner> */}
           <LandingStaircase
             headerline={name}
             more="Back to rooms"
@@ -71,8 +64,6 @@ export default class SingleRoom extends Component {
             <div className="desc">
               <h3 className="article-subheader">{name}</h3>
               <p>{description}</p>
-              <br />
-              Price: ${price}
               <br />
               Approximate size: {size} m<sup>2</sup>
               <br />

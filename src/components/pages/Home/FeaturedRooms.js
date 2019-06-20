@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { RoomContext } from '../Context';
-import Spinner from './Spinner';
-import Room from './Room';
-import Title from './Title';
+import { RoomContext } from '../../../Context';
+import Spinner from '../../layout/Spinner';
+import Room from '../Rooms/Room';
+import Title from '../../layout/Title';
 
 export default class FeaturedRooms extends Component {
   static contextType = RoomContext;

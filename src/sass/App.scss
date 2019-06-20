@@ -94,7 +94,7 @@ h6 {
 }
 .roomsShowcase {
   background-image: url('./images/room-2.jpeg');
-  min-height: 60vh;
+  min-height: 70vh;
 }
 
 .gallery-room {
@@ -108,11 +108,31 @@ h6 {
     line-height: 0.8;
   }
 }
+// for all Hotel rooms
+.show-room {
+  position: absolute;
+  top: 5%;
+  z-index: 1;
+  text-align: center;
+  min-width: 150px;
+  .gallery-item-header span {
+    color: $trueGreen;
+    font-size: 2rem;
+    line-height: 0.8;
+    // padding: 0;
+  }
+  .gallery-item-description {
+    padding: 15px 10px 10px 35px;
+    min-width: 250px;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}
 /* End of Showcase */
 .gallery-item-header {
   background: rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  max-width: 40%;
+  max-width: 50%;
   text-align: right;
 
   span {
@@ -125,6 +145,7 @@ h6 {
     mix-blend-mode: screen;
     line-height: 0.7;
     text-transform: lowercase;
+    // word-wrap: none;
   }
 }
 
@@ -132,11 +153,14 @@ h6 {
   display: block;
   background: rgba($trueGreen, 0.85);
   padding: 25px 35px;
+  // padding: 15px 10px;
   font-size: 2rem;
   line-height: 1.1;
-  max-width: 50%;
+  max-width: 60%;
   color: $mainWhite;
   letter-spacing: initial;
+  // min-width: 150px;
+  // text-align: center;
 }
 
 .gallery-bottom {
@@ -147,6 +171,11 @@ h6 {
   line-height: 1;
   font-weight: 700;
   max-width: 48%;
+  min-width: 159px;
+  transform: $mainTransition;
+  &:hover {
+    background: #c76b00;
+  }
 }
 
 // explore
@@ -651,7 +680,7 @@ footer {
     background: $tastyOrange;
     color: $mainWhite;
     max-width: 10%;
-    min-width: 10%;
+    min-width: 130px;
     padding: 10px 25px;
     font-size: 0.9rem;
     text-align: center;

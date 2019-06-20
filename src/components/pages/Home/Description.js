@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { RoomContext } from '../Context';
-import Spinner from './Spinner';
+import { RoomContext } from '../../../Context';
+import Spinner from '../../layout/Spinner';
 
 export default class Description extends Component {
   static contextType = RoomContext;

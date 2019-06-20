@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Landing from '../layout/Landing';
-import RoomsContainer from '../RoomsContainer';
-import LandingStaircase from '../LandingStaircase';
-import Spinner from '../Spinner';
-import { RoomContext } from '../../Context';
+import Landing from '../../layout/Landing';
+import RoomsContainer from './RoomsContainer';
+import LandingStaircase from '../../layout/LandingStaircase';
+import Spinner from '../../layout/Spinner';
+import { RoomContext } from '../../../Context';
 
 class Rooms extends Component {
   static contextType = RoomContext;

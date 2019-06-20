@@ -1,10 +1,10 @@
 import React from 'react';
 import RoomsFilter from './RoomsFilter';
 import RoomsList from './RoomsList';
-import Footer from './Footer';
-import Newsletter from './Newsletter';
-import { RoomConsumer } from '../Context';
-import Spinner from './Spinner';
+import Footer from '../../layout/Footer';
+import Newsletter from '../../layout/Newsletter';
+import { RoomConsumer } from '../../../Context';
+import Spinner from '../../layout/Spinner';
 
 export default function RoomsContainer() {
   return (

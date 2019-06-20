@@ -1,11 +1,11 @@
 import React from 'react';
-import Landing from '../layout/Landing';
-import FeaturedRooms from '../FeaturedRooms';
-import Description from '../Description';
-import Staircase from '../Staircase';
-import Nearby from '../Nearby';
-import Newsletter from '../Newsletter';
-import Footer from '../Footer';
+import Landing from '../../layout/Landing';
+import FeaturedRooms from './FeaturedRooms';
+import Description from './Description';
+import Staircase from '../../layout/Staircase';
+import Nearby from './Nearby';
+import Newsletter from '../../layout/Newsletter';
+import Footer from '../../layout/Footer';
 
 const Home = () => {
   return (

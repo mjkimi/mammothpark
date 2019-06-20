@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import defaultImg from '../images/room-1.jpeg';
+import defaultImg from '../../images/room-1.jpeg';
 
 const StyledLanding = styled.header`
-  min-height: 60vh;
+  min-height: 70vh;
   background: url(${props => (props.img ? props.img : defaultImg)}) center/cover
     no-repeat;
   display: flex;

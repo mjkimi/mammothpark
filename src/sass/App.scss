@@ -70,7 +70,7 @@ h6 {
   position: relative;
 }
 .roomsShowcase {
-  background-image: url('./images/room-2.jpeg');
+  background-image: url('./images/room-12.jpeg');
   min-height: 70vh;
 }
 
@@ -281,7 +281,7 @@ section.nearby {
 .roomslist {
   padding: 5rem 0;
   .roomslist-center {
-    width: 80vw;
+    width: 85vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -375,6 +375,27 @@ section.nearby {
   }
   p {
     line-height: 1.5;
+  }
+}
+
+// Error page
+.error {
+  &-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #ff416c, #ff4b2b);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .warning {
+    background: url('./images/404-page-not-found.jpg') no-repeat center/contain;
+    width: 100vw;
+    z-index: 1;
+    height: 400px;
   }
 }
 

@@ -10,16 +10,8 @@
   padding: 0 25px;
   line-height: 1;
   font-weight: 700;
-  // letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
-  // margin-bottom: 1rem;
 }
-// .section-title hr {
-//   width: 5rem;
-//   height: 5px;
-//   margin: 0 auto;
-//   background: var(--primaryColor);
-// }
 /* end of Title */
 
 /* featured rooms */
@@ -34,16 +26,6 @@
   grid-row-gap: 2rem;
   grid-column-gap: 5px;
 }
-// @media screen and (min-width: 776px) {
-
-// }
-// @media screen and (min-width: 992px) {
-//   .featured-rooms-center {
-//     width: 95vw;
-//     max-width: 1170px;
-//   }
-// }
-/* end pf featured rooms */
 /* room */
 .room {
   position: relative;
@@ -84,24 +66,13 @@
   transform: scale(0);
   transition: all 0.3s linear;
 }
-// .img-container:hover {
-//   background: rgba(0, 0, 0, 0.8);
-// }
-// .img-container:hover img {
-//   opacity: 0.3;
-// }
-// .img-container:hover .price-top {
-//   opacity: 0;
-// }
 .img-container:hover .room-link {
   transform: translate(-50%, -50%) scale(1);
 }
 .room-info {
-  background: var(--darkGrey);
   text-transform: capitalize;
   padding: 0.5rem 0;
   text-align: center;
   font-weight: 700;
-  letter-spacing: var(--mainSpacing);
 }
 /* end of room  */

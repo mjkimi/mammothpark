@@ -77,4 +77,12 @@
   section.newsletter {
     grid-template-columns: 1fr !important;
   }
+  // Staircase
+  .block-content .first {
+    padding: 5px 10px 10px;
+    text-align: center;
+    strong {
+      font-size: 1rem;
+    }
+  }
 }

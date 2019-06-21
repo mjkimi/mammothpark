@@ -1,0 +1,141 @@
+// For home page
+.gallery-item-header {
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  max-width: 50%;
+  text-align: right;
+
+  span {
+    background: $mainWhite;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 0 1px 14px 15px;
+    text-align: right;
+    display: block;
+    mix-blend-mode: screen;
+    line-height: 0.7;
+    text-transform: lowercase;
+  }
+}
+
+.gallery-item-description {
+  display: block;
+  background: rgba($trueGreen, 0.85);
+  padding: 25px 35px;
+  font-size: 2rem;
+  line-height: 1.1;
+  max-width: 60%;
+  color: $mainWhite;
+  letter-spacing: initial;
+}
+
+.gallery-bottom {
+  color: $mainWhite;
+  background: $tastyOrange;
+  padding: 15px 35px;
+  font-size: 1.3rem;
+  line-height: 1;
+  font-weight: 700;
+  max-width: 48%;
+  min-width: 159px;
+  transform: $mainTransition;
+  &:hover {
+    background: #c76b00;
+  }
+}
+
+// for all Hotel rooms
+.show-room {
+  position: absolute;
+  top: 5%;
+  z-index: 1;
+  text-align: center;
+  min-width: 150px;
+  .gallery-item-header span {
+    color: $trueGreen;
+    font-size: 2rem;
+    line-height: 0.8;
+  }
+  .gallery-item-description {
+    padding: 15px 10px 10px 35px;
+    min-width: 250px;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}
+
+// shoecase staircase on Hotel rooms & SingleRoom components
+.block-content {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  text-transform: initial;
+  width: 100%;
+
+  .first {
+    background: $mainWhite;
+    color: $tartViolet;
+    padding: 15px 25px;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: capitalize;
+    max-width: 40%;
+  }
+
+  .middle {
+    background: $tartViolet;
+    color: $mainWhite;
+    padding: 10px 20px;
+    font-size: 1rem;
+    max-width: 20%;
+    display: inline-block;
+    min-width: 20%;
+    transition: $mainTransition;
+    &:hover {
+      background: darken($tartViolet, 10);
+    }
+  }
+  .bottom {
+    background: $tastyOrange;
+    color: $mainWhite;
+    max-width: 10%;
+    min-width: 130px;
+    padding: 10px 25px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+.content-all {
+  .first {
+    color: initial;
+    mix-blend-mode: screen;
+  }
+  .bottom {
+    background: $ttPink;
+  }
+}
+
+// On SingleRoom gallery
+.photo-caption {
+  position: absolute;
+  bottom: 20%;
+  left: 10px;
+  min-width: 45%;
+  max-width: 65%;
+  span.caption {
+    display: block;
+    background: rgba($mainWhite, 0.85);
+    color: $trustyBlue;
+    font-size: 2rem;
+    padding: 0.35rem 1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  span.fake-border {
+    max-width: 50%;
+    height: 10px;
+    display: block;
+    background: rgba($mainBlack, 0.5);
+  }
+}

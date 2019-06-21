@@ -3,6 +3,8 @@
 @import 'config';
 @import 'navbar';
 @import 'room';
+@import 'utilities';
+@import 'staircases';
 
 * {
   box-sizing: border-box;
@@ -35,33 +37,18 @@ address {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3rem;
   line-height: 1;
 }
-// h2 {
-//   font-size: 2em;
-//   margin-bottom: 0.75em;
-// }
-// h3 {
-//   font-size: 1.5em;
-//   line-height: 1;
-//   margin-bottom: 1em;
-// }
-// h4 {
-//   font-size: 1.2em;
-//   line-height: 1.25;
-//   margin-bottom: 1.25em;
-// }
 h5 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 1.5em;
 }
 h6 {
   color: $trueGreen;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: bold;
-  // margin-bottom: 1.5em;
 }
 
 .narrow {
@@ -81,16 +68,6 @@ h6 {
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  // z-index: 1;
-  // &:before {
-  //   content: '';
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background: rgba(0, 0, 0, 0.3);
-  // }
 }
 .roomsShowcase {
   background-image: url('./images/room-2.jpeg');
@@ -108,77 +85,8 @@ h6 {
     line-height: 0.8;
   }
 }
-// for all Hotel rooms
-.show-room {
-  position: absolute;
-  top: 5%;
-  z-index: 1;
-  text-align: center;
-  min-width: 150px;
-  .gallery-item-header span {
-    color: $trueGreen;
-    font-size: 2rem;
-    line-height: 0.8;
-    // padding: 0;
-  }
-  .gallery-item-description {
-    padding: 15px 10px 10px 35px;
-    min-width: 250px;
-    font-size: 1.5rem;
-    text-align: left;
-  }
-}
-/* End of Showcase */
-.gallery-item-header {
-  background: rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  max-width: 50%;
-  text-align: right;
 
-  span {
-    background: $mainWhite;
-    font-size: 4rem;
-    font-weight: 700;
-    padding: 0 1px 14px 15px;
-    text-align: right;
-    display: block;
-    mix-blend-mode: screen;
-    line-height: 0.7;
-    text-transform: lowercase;
-    // word-wrap: none;
-  }
-}
-
-.gallery-item-description {
-  display: block;
-  background: rgba($trueGreen, 0.85);
-  padding: 25px 35px;
-  // padding: 15px 10px;
-  font-size: 2rem;
-  line-height: 1.1;
-  max-width: 60%;
-  color: $mainWhite;
-  letter-spacing: initial;
-  // min-width: 150px;
-  // text-align: center;
-}
-
-.gallery-bottom {
-  color: $mainWhite;
-  background: $tastyOrange;
-  padding: 15px 35px;
-  font-size: 1.3rem;
-  line-height: 1;
-  font-weight: 700;
-  max-width: 48%;
-  min-width: 159px;
-  transform: $mainTransition;
-  &:hover {
-    background: #c76b00;
-  }
-}
-
-// explore
+// Home page: explore
 .explore {
   display: grid;
   grid-template-columns: 70% 30%;
@@ -213,6 +121,7 @@ h6 {
   }
 }
 
+// Blue side bar on Home
 .sidebar {
   margin: 1.75rem 0;
   color: $mainWhite;
@@ -285,62 +194,7 @@ section.nearby {
   }
 }
 
-section.newsletter {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background: $tPink;
-  div.form {
-    padding: 30px 15px;
-    color: $mainWhite;
-    span {
-      min-width: 100%;
-      font-size: 1.75rem;
-    }
-    form {
-      position: relative;
-    }
-    input {
-      font-size: 0.9rem;
-      min-height: 3rem;
-      padding: 1rem;
-      &[type='email'] {
-        width: 75%;
-        padding-left: 2rem;
-      }
-
-      &[type='submit'] {
-        width: 25%;
-        background: $trueGreen;
-        color: $mainWhite;
-        border: none;
-        font-weight: 700;
-        cursor: pointer;
-      }
-    }
-    .icon {
-      position: absolute;
-      top: 20%;
-      left: 3px;
-      font-size: 1.75rem;
-      color: $tPink;
-    }
-  }
-}
-
-footer {
-  background: #d9d9d9;
-  margin: 2rem 0 0;
-  text-align: center;
-  color: #666;
-  font-size: 0.8rem;
-  padding: 15px 0 5px;
-  span {
-    display: block;
-    padding: 0.2rem 0;
-  }
-}
-
-/*  rooms fitler*/
+// Violet Filter on HotelRooms
 .filter-container {
   background: $tartViolet;
   color: $mainWhite;
@@ -421,51 +275,22 @@ footer {
   margin-left: 0.5rem;
   letter-spacing: normal;
 }
-@media screen and (min-width: 776px) {
-  .search-form {
-    // width: 70vw;
-  }
-}
-@media screen and (min-width: 992px) {
-  .search-form {
-    width: 95vw;
-    max-width: 1170px;
-  }
-}
-/* end of rooms fitler*/
+// Enf of Filter
 
-/* roomlist */
+// RoomsList
 .roomslist {
   padding: 5rem 0;
-}
-.roomslist-center {
-  width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 30px;
-}
-
-@media screen and (min-width: 776px) {
   .roomslist-center {
-    width: 90vw;
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 30px;
   }
 }
-@media screen and (min-width: 992px) {
-  .roomslist-center {
-    width: 95vw;
-    max-width: 1170px;
-  }
-}
-/* end of roomlist */
 
-/* single room*/
-
-.single-room {
-  // padding: 5rem 0;
-}
-
+// SingleRoom
 .gallery {
   position: fixed;
   top: 0;
@@ -483,8 +308,6 @@ footer {
     cursor: pointer;
     border: 10px solid $mainWhite;
     border-right-color: $trustyBlue;
-    // position: relative;
-    // margin:
   }
   &-close {
     color: $tPink;
@@ -495,28 +318,6 @@ footer {
   }
   .image-wrapper {
     position: relative;
-  }
-  .photo-caption {
-    position: absolute;
-    bottom: 20%;
-    left: 10px;
-    min-width: 45%;
-    max-width: 65%;
-    span.caption {
-      display: block;
-      background: rgba($mainWhite, 0.85);
-      color: $trustyBlue;
-      font-size: 2rem;
-      padding: 0.35rem 1rem;
-      font-weight: 700;
-      text-transform: capitalize;
-    }
-    span.fake-border {
-      max-width: 50%;
-      height: 10px;
-      display: block;
-      background: rgba($mainBlack, 0.5);
-    }
   }
 }
 
@@ -532,18 +333,14 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 5px;
-
-  // padding: 30px;
   .single-image {
     position: relative;
     cursor: pointer;
     transform: scale(1);
     transition: $mainTransition;
-    // box-sizing: border-box;
     border: 1px solid transparent;
     border-bottom: 7px solid transparent;
     padding-bottom: 5px;
-    // background: $tastyOrange;
     &:hover {
       transform: scale(1.1);
       z-index: 5;
@@ -551,12 +348,8 @@ footer {
       border: 1px solid $mainWhite;
       border-bottom: 7px solid $tartViolet;
       background: $mainWhite;
-      // box-sizing: border-box;
       .zoom {
         opacity: 1;
-      }
-      img {
-        // opacity: 0.8;
       }
     }
   }
@@ -564,135 +357,24 @@ footer {
     position: absolute;
     top: 50%;
     left: 47%;
-    // top: 0%;
-    // left: 0%;
-    // bottom: 0;
-    // right: 0;
     z-index: 100;
     font-size: 1.5rem;
     opacity: 0;
     color: $tastyOrange;
-    // box-shadow: 3px 3px 3px #666;
-    // background: $mainWhite;
-    // border-radius: 50%;
   }
 }
 .single-room-images img {
   width: 100%;
   display: block;
 }
-// .single-room-info {
-//   width: 80vw;
-//   display: grid;
-//   grid-template-columns: 1fr;
-//   margin: 2rem auto;
-// }
-.desc,
-.info {
-  margin: 3rem 0;
-}
-.desc h3 {
-  text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
-}
-.desc p {
-  line-height: 1.5;
-}
-.info h3,
-.info h6 {
-  text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
-}
 
-.info h6 {
-  font-weight: 300;
-}
-// .room-extras {
-//   width: 80vw;
-//   margin: 0 auto 3rem auto;
-// }
-// .room-extras h6 {
-//   text-transform: capitalize;
-//   letter-spacing: var(--mainSpacing);
-// }
-// .extras {
-//   list-style-type: none;
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-//   grid-column-gap: 2rem;
-//   grid-row-gap: 1rem;
-// }
-@media screen and (min-width: 992px) {
-  .single-room-images,
-  // .single-room-info,
-  .room-extras {
-    width: 95vw;
-    max-width: 1170px;
-  }
-  .single-room-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2rem;
-  }
-  .info {
-    padding-left: 3rem;
-  }
-}
-/* end of single room*/
-
-// landing staircase
-.block-content {
-  position: absolute;
-  left: 0;
-  bottom: 10%;
-  text-transform: initial;
-  width: 100%;
-
-  .first {
-    background: $mainWhite;
-    color: $tartViolet;
-    padding: 15px 25px;
-    // display: inline-block;
-    font-size: 2rem;
-    line-height: 1;
-    font-weight: 700;
+.desc {
+  margin: 3rem 0 2rem;
+  h3 {
     text-transform: capitalize;
-    // min-width: 20%;
-    // min-width: 30%;
-    max-width: 40%;
   }
-
-  .middle {
-    background: $tartViolet;
-    color: $mainWhite;
-    padding: 10px 20px;
-    font-size: 1rem;
-    max-width: 20%;
-    display: inline-block;
-    min-width: 20%;
-    transition: $mainTransition;
-    &:hover {
-      background: darken($tartViolet, 10);
-    }
-  }
-  .bottom {
-    // display: inline-block;
-    background: $tastyOrange;
-    color: $mainWhite;
-    max-width: 10%;
-    min-width: 130px;
-    padding: 10px 25px;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-}
-.content-all {
-  .first {
-    color: initial;
-    mix-blend-mode: screen;
-  }
-  .bottom {
-    background: $ttPink;
+  p {
+    line-height: 1.5;
   }
 }
 

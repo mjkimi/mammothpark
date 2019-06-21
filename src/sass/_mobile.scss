@@ -16,6 +16,31 @@
       padding: 0.5rem 0;
     }
   }
+  //Violet Filter
+  .search-form {
+    width: 95vw;
+    max-width: 1170px;
+  }
+  // Roomsfilter
+  .roomslist-center {
+    width: 90vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .roomslist-center {
+    width: 95vw;
+    max-width: 1170px;
+  }
+  .single-room-images,
+  .room-extras {
+    width: 95vw;
+    max-width: 1170px;
+  }
+  .single-room-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
 }
 
 @media screen and (max-width: 900px) {

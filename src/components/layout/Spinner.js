@@ -5,11 +5,11 @@ import spinnerWhite from '../../images/gif/loading-whitebg.gif';
 export default function Spinner({ bgcolor }) {
   return (
     <div className="loading">
-      <h4>rooms data loading...</h4>
       <img
         src={bgcolor === 'blue' ? spinnerBlue : spinnerWhite}
         alt="loading"
       />
+      <h4>loading...</h4>
     </div>
   );
 }

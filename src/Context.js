@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import items from './data';
+// import items from './data';
 
 const RoomContext = React.createContext();
 //
@@ -24,25 +24,34 @@ class RoomProvider extends Component {
   initialState = {};
 
   // getData
-  componentDidMount() {
-    let rooms = this.formatData(items);
-    let featuredRooms = rooms.filter(room => room.featured === true);
-    let maxPrice = Math.max(...rooms.map(room => room.price));
-    let minPrice = Math.min(...rooms.map(room => room.price));
-    let maxSize = Math.max(...rooms.map(room => room.size));
+  getData = async () => {
+    try {
+      let res = await import('./data');
+      let rooms = this.formatData(res.default);
+      let featuredRooms = rooms.filter(room => room.featured === true);
+      let maxPrice = Math.max(...rooms.map(room => room.price));
+      let minPrice = Math.min(...rooms.map(room => room.price));
+      let maxSize = Math.max(...rooms.map(room => room.size));
 
-    this.initialState = {
-      ...this.state,
-      rooms,
-      featuredRooms,
-      sortedRooms: rooms,
-      loading: false,
-      price: maxPrice,
-      maxPrice,
-      minPrice,
-      maxSize
-    };
-    this.setState(this.initialState);
+      this.initialState = {
+        ...this.state,
+        rooms,
+        featuredRooms,
+        sortedRooms: rooms,
+        loading: false,
+        price: maxPrice,
+        maxPrice,
+        minPrice,
+        maxSize
+      };
+      this.setState(this.initialState);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  componentDidMount() {
+    this.getData();
   }
 
   getRoom = slug => {

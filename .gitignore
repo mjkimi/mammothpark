@@ -7,6 +7,10 @@
 
 # my files
 bin
+.env
+README.md
+server.js
+public/_redirects
 
 
 # testing
